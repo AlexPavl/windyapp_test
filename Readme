@@ -1,0 +1,6 @@
+API to use:
+curl -X GET "http://localhost:8000/getForecast?from_ts=1688400200&to_ts=1688504400&lat=52.52&lon=13.408001"
+
+Some additional info:
+Latitude and Longitude in request are float, I convert them in int later in the code. 
+I've decided not to use interpolation, it might come in handy if dx and dy are too big.
